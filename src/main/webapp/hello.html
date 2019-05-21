@@ -1,3 +1,5 @@
+<html>
+
 <h1>Example :: Get data</h1>
 <li>id: <span id="_id"></span></li>
 <li>name: <span id="_name"></span></li>
@@ -7,7 +9,7 @@
 var ajax = new XMLHttpRequest();
 ajax.onload = functionName;
 ajax.onerror = errorFunctionName;
-ajax.open("GET", "http://localhost:8080/api/hello", true);
+ajax.open("GET", "http://192.168.205.124:8888/api/hello", true);
 ajax.send();
 
 function functionName() {
@@ -41,7 +43,7 @@ function errorFunctionName(e) {
     function sendDataToServer(data) {
         var ajax = new XMLHttpRequest();
         ajax.onload = receiveResponse;
-        ajax.open("POST", "http://localhost:8080/api/hello", true);
+        ajax.open("POST", "http://192.168.205.124:8888/api/hello", true);
         ajax.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         ajax.send(JSON.stringify({ name: data }));
     }
@@ -53,4 +55,4 @@ function errorFunctionName(e) {
 
 </script>
 
-
+</html>
