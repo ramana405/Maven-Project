@@ -45,18 +45,18 @@
 
 	</dependencies>
 	
-	<!--<distributionManagement>
-		<repository>
-			<id>Jfrog</id>
-			<name>L5-A175185-releases</name>
-			<url>http://192.168.205.124:8081/artifactory/Maven_repo</url>
-		</repository>
-		<snapshotRepository>
-			<id>Jfrog</id>
-			<name>L5-A175185-snapshots</name>
-			<url>http://192.168.205.124:8081/artifactory/Maven_repo</url>
-		</snapshotRepository>		
-	</distributionManagement>-->
+	<distributionManagement>
+    		<repository>
+        		<id>central</id>
+        		<name>HYDPCM456350D-releases</name>
+        		<url>http://192.168.205.107:8081/artifactory/maven_test</url>
+    		</repository>
+    		<snapshotRepository>
+        		<id>snapshots</id>
+       	 		<name>HYDPCM456350D-snapshots</name>
+        		<url>http://192.168.205.107:8081/artifactory/maven_test</url>
+    		</snapshotRepository>
+	</distributionManagement>
 
 	<build>
 		<finalName>api</finalName>
