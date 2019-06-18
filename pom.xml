@@ -47,12 +47,12 @@
 	
 	<distributionManagement>
     		<repository>
-        		<id>central</id>
+        		<id>Jfrog</id>
         		<name>HYDPCM456350D-releases</name>
         		<url>http://192.168.205.107:8081/artifactory/maven_test</url>
     		</repository>
     		<snapshotRepository>
-        		<id>snapshots</id>
+        		<id>Jfrog</id>
        	 		<name>HYDPCM456350D-snapshots</name>
         		<url>http://192.168.205.107:8081/artifactory/maven_test</url>
     		</snapshotRepository>
